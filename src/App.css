@@ -64,22 +64,22 @@ button:disabled {
   justify-content: center; /* Center images horizontally */
   align-items: center;
   flex-wrap: wrap;
-  gap: 40px; /* Adjust gap to ensure there's some space between images */
+  gap: 40px; /* there's some space between images */
 }
 
 .image-container {
   margin: 10px;
   width: 45%; /* Sets a relative width to avoid overly wide images */
   max-width: 500px; /* Limits maximum width for larger screens */
-  border: 1px solid #ccc; /* Adds a subtle border around images */
-  padding: 10px; /* Adds padding around images */
+  border: 1px solid #ccc; /* a subtle border around images */
+  padding: 10px; /* padding around images */
   box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adds shadow for depth */
 }
 
 .image-container img {
   width: 100%;
   height: auto;
-  display: block; /* Ensures the image does not have extra space below */
+  display: block;
 }
 
 .options {
