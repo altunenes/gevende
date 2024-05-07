@@ -1,0 +1,191 @@
+/* Basic reset for margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: Arial, sans-serif;
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+input[type="file"] {
+  margin: 20px 0;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.options {
+  margin: 20px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.label {
+  display: block;
+  margin: 10px 0;
+}
+
+.input-range {
+  width: 100%;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+}
+
+.image-display {
+  display: flex;
+  justify-content: center; /* Center images horizontally */
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px; /* Adjust gap to ensure there's some space between images */
+}
+
+.image-container {
+  margin: 10px;
+  width: 45%; /* Sets a relative width to avoid overly wide images */
+  max-width: 500px; /* Limits maximum width for larger screens */
+  border: 1px solid #ccc; /* Adds a subtle border around images */
+  padding: 10px; /* Adds padding around images */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adds shadow for depth */
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  display: block; /* Ensures the image does not have extra space below */
+}
+
+.options {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* Five columns for all inputs */
+  gap: 10px;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f4f4f4;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-bottom: 10px;
+  font-size: 0.9em;
+}
+
+.input-range {
+  width: 100%;
+  transition: border-color 0.3s;
+}
+
+.input-number {
+  width: 100%; /* Full width to fit better in the grid */
+  max-width: 60px; /* Reduce max-width to fit better */
+}
+
+input[type="checkbox"] {
+  transform: scale(1.2);
+  margin-left: 5px;
+  transition: transform 0.2s;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+input[type="range"],
+input[type="number"] {
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+input[type="range"]:hover,
+input[type="number"]:hover,
+input[type="checkbox"]:hover {
+  border-color: #888;
+}
+
+input[type="range"]:focus,
+input[type="number"]:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+.image-display {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; 
+  flex-wrap: wrap;
+  gap: 40px; 
+}
+
+.image-container {
+  margin: 10px;
+  width: 45%;
+  max-width: 500px; 
+  border: 1px solid #ccc; 
+  padding: 10px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; 
+  min-height: 500px;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto; 
+  margin-bottom: 10px; 
+}
+
+.download-button {
+  margin-top: auto; 
+  background-color: #16060a;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+
+.download-button:hover {
+  background-color: #7b0536;
+}
+
+.download-button svg {
+  margin-right: 5px;
+}
