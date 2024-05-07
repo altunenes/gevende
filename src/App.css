@@ -19,7 +19,7 @@ input[type="file"] {
 }
 
 button {
-  background-color: #4CAF50;
+  background-color: #7b0536;
   color: white;
   padding: 10px 20px;
   margin: 10px;
@@ -30,7 +30,7 @@ button {
 }
 
 button:hover {
-  background-color: #45a049;
+  background-color: #7b0536;
 }
 
 button:disabled {
@@ -61,28 +61,30 @@ button:disabled {
 
 .image-display {
   display: flex;
-  justify-content: center; /* Center images horizontally */
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 40px; /* there's some space between images */
+  gap: 40px; 
 }
 
 .image-container {
   margin: 10px;
-  width: 45%; /* Sets a relative width to avoid overly wide images */
-  max-width: 500px; /* Limits maximum width for larger screens */
-  border: 1px solid #ccc; /* a subtle border around images */
-  padding: 10px; /* padding around images */
+  width: 45%; 
+  max-width: 500px; 
+  border: 1px solid #ccc; 
+  padding: 10px; 
   box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
 }
+
 .image-container img {
   width: 100%;
   height: auto;
   display: block;
 }
+
 .options {
   display: grid;
-  grid-template-columns: repeat(5, 1fr); 
+  grid-template-columns: repeat(5, 1fr);
   gap: 10px;
   margin-top: 20px;
   padding: 20px;
@@ -90,6 +92,7 @@ button:disabled {
   background-color: #f4f4f4;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
+
 .label {
   display: flex;
   flex-direction: column;
@@ -97,38 +100,45 @@ button:disabled {
   margin-bottom: 10px;
   font-size: 0.9em;
 }
+
 .input-range {
   width: 100%;
   transition: border-color 0.3s;
 }
+
 .input-number {
   width: 100%; 
-  max-width: 60px;
+  max-width: 60px; 
 }
+
 input[type="checkbox"] {
   transform: scale(1.2);
   margin-left: 5px;
   transition: transform 0.2s;
 }
+
 .checkbox-label {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 input[type="range"],
 input[type="number"] {
   border: 1px solid #ccc;
   padding: 5px;
   border-radius: 4px;
 }
+
 input[type="range"]:hover,
 input[type="number"]:hover,
 input[type="checkbox"]:hover {
   border-color: #888;
 }
+
 input[type="range"]:focus,
 input[type="number"]:focus {
-  border-color: #4CAF50;
+  background-color: #7b0536;
   outline: none;
 }
 .image-display {
@@ -138,6 +148,7 @@ input[type="number"]:focus {
   flex-wrap: wrap;
   gap: 40px; 
 }
+
 .image-container {
   margin: 10px;
   width: 45%;
@@ -150,11 +161,13 @@ input[type="number"]:focus {
   justify-content: space-between; 
   min-height: 500px;
 }
+
 .image-container img {
   width: 100%;
   height: auto; 
   margin-bottom: 10px; 
 }
+
 .download-button {
   margin-top: auto; 
   background-color: #16060a;
@@ -168,47 +181,47 @@ input[type="number"]:focus {
   justify-content: center;
   font-size: 16px;
 }
+
 .download-button:hover {
   background-color: #7b0536;
 }
+
 .download-button svg {
   margin-right: 5px;
 }
 .app-footer {
-  margin-top: auto;
   padding: 20px;
-  width: 100%;
-  background-color: #7d7d7d;
-  color: #ababab;
+  background-color: rgba(244, 244, 244, 0.9);
+  color: #333;
   text-align: center;
-  border-top: 1px solid #a2a2a2;
+  border-top: 1px solid #ccc;
+  width: 100%; 
 }
+
 .app-footer a {
   color: #0066cc;
-  text-decoration: none;
-  padding: 0 10px;
+  text-decoration: none;  
 }
+
 .app-footer a:hover {
-  text-decoration: underline;
+  text-decoration: underline; 
 }
+
 .app-footer p {
   font-size: 0.9em;
   margin-top: 10px;
 }
-body, html {
-  font-family: Arial, sans-serif;
-  background: linear-gradient(to right, #515151, #515151);
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-.App {
-  text-align: center;
-  padding: 20px;
-  min-height: 100vh; 
-  display: flex;
-  flex-direction: column; 
-  justify-content: center; 
-  align-items: center; 
+
+
+@media (max-width: 768px) {
+  .image-container {
+    width: 100%;               
+    max-width: 100%;        
+    padding: 10px;
+    box-shadow: none;        
+  }
+
+  .options {
+    display: block;          
+  }
 }

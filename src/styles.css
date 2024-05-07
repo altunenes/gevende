@@ -61,8 +61,8 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  color: #0f0f0f;
-  background-color: #ffffff;
+  background-color: #16060a;
+  color: white;
   transition: border-color 0.25s;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
 }
@@ -79,7 +79,6 @@ button:active {
   background-color: #e8e8e8;
 }
 
-/* Hide the default file input */
 .input-file {
   width: 0.1px;
   height: 0.1px;
@@ -88,13 +87,11 @@ button:active {
   position: absolute;
   z-index: -1;
 }
-
-/* Custom label styling, which will serve as the visible part of our file input */
 .input-file + label {
   font-size: 1em;
   font-weight: 500;
-  color: rgb(7, 7, 7);
-  background-color: #ffffff;
+  background-color: #16060a;
+  color: white;
   display: inline-block;
   padding: 0.8em 1.5em;
   margin: 10px;
@@ -102,30 +99,23 @@ button:active {
   cursor: pointer;
   transition: background-color 0.3s, box-shadow 0.3s;
 }
-
-/* Change style when user hovers over the label */
 .input-file + label:hover {
-  background-color: #45a049;
+  background-color: #7b0536;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
-
-/* Style for when the input has focus */
 .input-file + label:focus,
 .input-file + label:active {
   background-color: #004cf1;
 }
 
-/* Changing the appearance when a file is selected */
 .input-file:focus + label,
 .input-file.has-file + label {
   background-color: #34495e;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
-
 #greet-input {
   margin-right: 5px;
 }
-
 @media (prefers-color-scheme: dark) {
   :root {
     color: #ffffff;
@@ -135,7 +125,6 @@ button:active {
   a:hover {
     color: #24c8db;
   }
-
   input,
   button {
     color: #ffffff;
