@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { invoke } from '@tauri-apps/api/tauri';
 import './App.css';
 import { FaDownload } from 'react-icons/fa';
+import Footer from './dooter'; 
 interface URLInputModalProps {
   isOpen: boolean;
   onClose: () => void;
@@ -166,8 +167,11 @@ function App() {
           <h2>Filtered Image</h2>
           {filteredImageSrc && <img src={filteredImageSrc} alt="Filtered" />}
           {filteredImageSrc && (
-  <button onClick={downloadImage} className="download-button"><FaDownload /> Download</button>
+         <button onClick={downloadImage} className="download-button"><FaDownload /> Download</button>
+         
 )}        </div>
+      <Footer /> {/* Add the Footer component */}
+
       </div>
     </div>
   );
