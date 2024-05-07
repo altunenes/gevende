@@ -1112,7 +1112,6 @@ version = "0.0.0"
 dependencies = [
  "butter2d",
  "image 0.25.1",
- "rand 0.8.5",
  "serde",
  "serde_json",
  "tauri",
