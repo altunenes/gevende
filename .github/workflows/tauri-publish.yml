@@ -34,6 +34,11 @@ jobs:
         with:
           toolchain: stable
           default: true
+          target: ${{ matrix.target }}
+          override: true
+
+      - name: Add Rust target
+        run: rustup target add ${{ matrix.target }}
 
       - name: Build Tauri app
         run: npm run tauri build -- --target ${{ matrix.target }}
@@ -45,6 +50,7 @@ jobs:
         with:
           name: ${{ runner.os }}-artifact
           path: src-tauri/target/release/bundle/**
+
 
   release:
     needs: [build]
